@@ -1,0 +1,17 @@
+{
+  "author": {
+    "name": "Maria Tzeka",
+    "email": "marianna.tzeka@gmail.com"
+  },
+  "name": "dom-helper",
+  "description": "Rendering string based templates client + server side.",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mtzeka/dom-helper.git"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.6"
+  }
+}
