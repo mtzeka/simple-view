@@ -38,4 +38,4 @@ app.get('/', function(req, res) {
 }); 
 ````
 
-Depending on what templating enging you are using, you will want to render `body` as raw html.
+Depending on what templating engine you are using, you will want to render `body` as raw html.
