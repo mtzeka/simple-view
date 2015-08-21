@@ -1,10 +1,3 @@
-## Methods
-### render
-```
-var view = require('./views/test');
-view.render({ name: 'Maria' }, '.name-wrapper');
-```
-
 ## How to build a view
 ````
 module.exports = {
