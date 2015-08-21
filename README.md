@@ -30,7 +30,6 @@ window.onload = function () {
 ### Server-side (w/ Express)
 ````
 var app = require('express')();
-var DomHelper = require('dom-helper');
 var index = require('./views')
 
 app.get('/', function(req, res) {
