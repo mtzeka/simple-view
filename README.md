@@ -6,10 +6,9 @@ module.exports = {
       ['click', this.displayAlertMessage, this],
     ]
   },
-  render: function (data, wrapper) {
-    return(
-      '<h1>' + data.name + '</h1>';
-    );    
+  build: function (data, wrapper) {
+    var html = '<h1>' + data.name + '</h1>';
+    return [html, this.events()];
   },
   displayAlertMessage: function (e) {
     alert('hellllloooo!');
