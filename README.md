@@ -22,7 +22,7 @@ var DomHelper = require('dom-helper');
 var index = require('./views')
 
 window.onload = function () {
-  var entry = index.build();
+  var entry = index.build({ name: 'Maria' });
   DomHelper.render(entry, '.container');
 }
 ````
@@ -34,7 +34,8 @@ var DomHelper = require('dom-helper');
 var index = require('./views')
 
 app.get('/', function(req, res) {
-  res.render('index', { body: index.render({ name: 'Maria' })[0] });
+  var view = index.build({ name: 'Maria' });
+  res.render('index', { body: index.render()[0] });
 }); 
 ````
 
