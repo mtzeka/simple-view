@@ -30,7 +30,7 @@ window.onload = function () {
 ### Server-side (w/ Express)
 ````
 var app = require('express')();
-var index = require('./views')
+var index = require('./views');
 
 app.get('/', function(req, res) {
   res.render('index', { body: index.build({ name: 'Maria' })[0] });
