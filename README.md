@@ -34,8 +34,7 @@ var DomHelper = require('dom-helper');
 var index = require('./views')
 
 app.get('/', function(req, res) {
-  var entry = index.build({ name: 'Maria' });
-  res.render('index', { body: DomHelper.render(entry)[0] });
+  res.render('index', { body: index.build({ name: 'Maria' })[0] });
 }); 
 ````
 
