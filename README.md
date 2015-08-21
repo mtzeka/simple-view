@@ -1,6 +1,3 @@
-# dom-helper
-For rendering string based templates client + server side.
-
 ## Methods
 ### render
 ```
@@ -8,7 +5,7 @@ var view = require('./views/test');
 view.render({ name: 'Maria' }, '.name-wrapper');
 ```
 
-## how to build a view
+## How to build a view
 ````
 module.exports = {
   events: function () {
@@ -45,10 +42,8 @@ var DomHelper = require('dom-helper');
 var index = require('./views')
 
 app.get('/', function(req, res) {
-  res.render('index', { body: index.build() });
+  res.render('index', { body: index.render({ name: 'Maria' })[0] });
 }); 
-
-DomHelper.render(form)[0];
 ````
 
 Depending on what templating enging you are using, you will want to render `body` as raw html.
