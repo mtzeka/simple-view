@@ -18,12 +18,12 @@ module.exports = {
 
 ### Client-side
 ````
-var DomHelper = require('dom-helper');
+var SimpleView = require('simple-view');
 var index = require('./views')
 
 window.onload = function () {
   var entry = index.build({ name: 'Maria' });
-  DomHelper.render(entry, '.container');
+  SimpleView.render(entry, '.container');
 }
 ````
 
